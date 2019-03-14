@@ -21,11 +21,12 @@
             <div class="col-md-12">
                     <form class="form-control formu">
                             <fieldset class="form-control">
-                                <legend class="form-control text-center"><h3>Exercícios de Mátematica</h3></legend>
+                                <legend class="form-control text-center"><h3> Gerador de exercícios de Mátematica</h3></legend>
                             <div class="form-row">    
                               <div class="form-group col-md-6">
                                     <label for="inputAssunto">Assunto</label>
                                     <select id="inputAssunto" class="form-control">                              
+                                      <option id="mdc">Multiplicação</option>
                                       <option id="mdc">MDC</option>
                                       <option id="mmc">MMC</option>
                                       <option id="opFracoes">Operações com frações</option>
@@ -40,11 +41,11 @@
                             </div>
                        <div class="form-group">
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                      <input type="radio" name="options" id="option1" autocomplete="off" value="facil" > Fácil
+                                    <label class="btn btn-secondary active ">
+                                      <input type="radio" name="options" id="option1" autocomplete="off" value="facil" checked> Fácil
                                     </label>
                                     <label class="btn btn-secondary">
-                                      <input type="radio" name="options" id="option2" autocomplete="off" value="medio"> Médio
+                                      <input type="radio" name="options" id="option2" autocomplete="off" value="media"> Médio
                                     </label>
                                     <label class="btn btn-secondary">
                                       <input type="radio" name="options" id="option3" autocomplete="off" value="dificil"> Difícil
@@ -69,10 +70,12 @@
         <table class="table table-dark">
           <thead>
             <tr>
+                <th scope="col">  </th>
+                <th scope="col">Dificuldade</th>
               <th scope="col">Questões  </th>
-              <th scope="col">Questão</th>
-              <th scope="col">Resposta</th>
+             <!-- <th scope="col">Resposta</th>-->
               <th scope="col">Resultado</th>
+           
             </tr>
           </thead>
           <tbody id="corpoTabela">
@@ -92,6 +95,7 @@
   </div>
 
 
-    
+
 </body>
+
 </html>
